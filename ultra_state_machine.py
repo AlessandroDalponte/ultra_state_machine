@@ -64,6 +64,12 @@ class State:
         self.active_state = True
         if self.next_activation_index is not None:
             self.current_active_index = self.next_activation_index
+            try:
+                self.activations_order[self.next_activation_index + 1]
+            except:
+                pass
+            else:
+                self.next_activation_index += 1
             
     
     def _deactivate_state(self) -> None:
