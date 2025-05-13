@@ -1,5 +1,77 @@
 {
-    "1": {
-        
+    "states": {
+        "0": {
+            "initialization": true,
+            "state_configs": {
+                "area_1": false,
+                "area_2": false,
+                "area_3": false
+            }
+        },
+        "1": {
+            "initialization": false,
+            "state_configs": {
+                "area_1": true,
+                "area_2": false,
+                "area_3": false
+            }
+        },
+        "2": {
+            "initialization": false,
+            "state_configs": {
+                "area_1": false,
+                "area_2": true,
+                "area_3": false
+            }
+        },
+        "3": {
+            "initialization": false,
+            "state_configs": {
+                "area_1": false,
+                "area_2": false,
+                "area_3": true
+            }
+        },
+        "12": {
+            "initialization": false,
+            "state_configs": {
+                "area_1": true,
+                "area_2": true,
+                "area_3": false
+            }
+        },
+        "13": {
+            "initialization": false,
+            "state_configs": {
+                "area_1": true,
+                "area_2": false,
+                "area_3": true
+            }
+        },
+        "23": {
+            "initialization": false,
+            "state_configs": {
+                "area_1": false,
+                "area_2": true,
+                "area_3": true
+            }
+        },
+        "123": {
+            "initialization": false,
+            "state_configs": {
+                "area_1": true,
+                "area_2": true,
+                "area_3": true
+            }
+        }
+    },
+    "states_transitions": {
+        "1": [0, 1, false],
+        "2": [0, 2],
+        "3": [0, 3],
+        "4": [0, 12]
+    },
+    "observed_states_transitions": {
+
     }
 }
